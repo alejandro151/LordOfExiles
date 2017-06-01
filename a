@@ -1,0 +1,25 @@
+
+dicc={}
+
+text=["perro","casa","piso","cenicero"]
+for i in text:
+  if i[0] in dicc:
+    dicc[i[0]]+=[i]
+  else:
+    dicc[i[0]]=[i]
+print(dicc)
+
+print len(dicc["p"])
+
+------------
+
+
+try:  
+  x=int(input("deme un numero"))
+  print(3/x)
+except NameError:
+  print("ooops!")
+except ZeroDivisionError:
+  print("o")
+except SyntaxError:
+  print("m")
